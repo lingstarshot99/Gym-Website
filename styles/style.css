@@ -1,0 +1,614 @@
+/* author: fahmi */
+/* target: index.html, product.html, enquire.html, enhancement.html, about.html */
+/* title: Assignment Part 1 */
+/* keyword: HTML, CSS */
+/* subject: COS10011 */
+
+
+
+html, header, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+  margin: 0;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  padding-bottom: 2px;
+  z-index: 200;
+}
+
+nav a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  display: inline-block;
+  width: 16%;
+  padding: 10px 0;
+  margin-right: 0;
+}
+
+nav a:hover {
+  color: #ffa500;
+  border-bottom: 4px solid #ffa500;
+  transition: all ease-in-out 400ms;
+}
+
+#btn-next {
+  background-color: orange;
+  padding: 30px 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 190px;
+}
+
+#logo {
+  color: #ffa500;
+  font-weight: bold;
+}
+
+#logo:hover {
+  background: inherit;
+  border: none;
+}
+
+#welcome {
+  background:rgba(255,165,0,0.5) url(images/background-resize.jpg);
+  height: 60vh;
+  padding-top: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+
+#promo-table {
+  text-align: center;
+  width: 100%;
+  margin: 50px 0;
+  font-size: 1.3em;
+}
+
+#promo-table td {
+  background-color: #ffa500;
+  height: 100px;
+}
+
+.back-orange {
+  background-color: #ffa500;
+}
+
+.back-light {
+  background-color: #ffe;
+}
+
+.back-gray {
+  background-color: #e1e1e1;
+}
+
+.back-no {
+
+}
+body {
+  background-color: #efefef;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+.wrapper-middle {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 5px 0;
+}
+
+#index {
+  padding: 30px 0;
+}
+
+.brief {
+  display: flex;
+  border: 4px solid #ffa500;
+  margin: 20px 0;
+  padding: 20px 0;
+  display: none;
+}
+
+.brief section, .brief article {
+  padding: 20px 10px;
+}
+
+.brief article a {
+  text-decoration: none;
+  color: #ffa500;
+  font-size: 1.5em;
+  padding: 7px 12px;
+  background-color: white;
+  border: 2px solid #ffa500;
+}
+
+.brief article {
+  width: 70%;
+}
+
+.brief section{
+  width: 30%;
+  text-align: center;
+}
+
+.brief img {
+  max-width: 250px;
+  width: 100%;
+}
+
+.breadcrumbs {
+  border-bottom: solid 2px #1f1f1f;
+  padding: 62px 0 10px 0;
+  background: white;
+}
+
+.breadcrumbs ul {
+  list-style-type: none;
+  padding-left: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.breadcrumbs ul li {
+  display: inline;
+  color: #ffa500;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.breadcrumbs ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.slogan {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 2em;
+  text-align: center;
+  color: #ffa500;
+}
+
+/* about.html dl --- start here ----*/
+
+.section-break {
+  padding: 30px 0;
+}
+
+#student-details {
+  width: 100%;
+  text-align: center;
+}
+
+#student-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+#student-number {
+  text-align: right;
+  font-family: Arial sans-serif;
+  width: 48%;
+  display: inline-block;
+  font-size: 22px;
+}
+
+#student-course {
+  color: rgb(255, 0, 0);
+  text-align: left;
+  width: 48%;
+  display: inline-block;
+  font-size: 22px;
+}
+
+#student-photo {
+  width: 20%;
+  display: inline-block;
+  float: right;
+}
+
+#photo {
+  width: 150px;
+  border: groove 4px #ffa500;
+  padding: 20px;
+}
+
+#student-timetable dt, #student-photo dt {
+  font-size: 22px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#assignment-requirements {
+  padding-top: 20px;
+}
+
+#assignment-requirements a {
+  text-decoration: none;
+  color: black;
+}
+
+#reflection {
+  padding-top: 20px;
+}
+
+#reflection ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#enhance-section {
+  padding: 60px 0;
+}
+
+.brief p::first-letter {
+  font-size: 1.5em;
+}
+
+#enhance-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.empty {
+  background-color: darkgray;
+}
+
+table {
+  border: 1px solid white;
+  font-size: 0.8em;
+}
+
+table th {
+  font-weight: bold;
+}
+
+th {
+  background-color: #d462af; /*purple color*/
+  height: 50px;
+  padding: 10px 7px;
+}
+
+td {
+  background-color: #e8adaa; /*rose color*/
+}
+/* enquire styles */
+
+#enquiry-section {
+  padding-top: 70px;
+}
+
+fieldset {
+  margin: 20px 0;
+  border: #ffa500 solid thin;
+}
+
+legend {
+  font-size: 24px;
+  color: #ffa500;
+}
+
+input[type="submit"], input[type="reset"] {
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  width: 30%;
+  display: inline;
+  color: white;
+  margin: 20px 0;
+}
+
+
+
+input[type="submit"] {
+  background-color: green;
+}
+
+input[type="reset"] {
+  background-color: red;
+}
+
+input[type="text"],input[type="email"],input[type="number"], select , textarea {
+  outline: #ffa500 thin solid;
+}
+
+.half-height {
+  height: 50vh;
+}
+
+.btn {
+  color: white;
+  padding: 15px 25px;
+  background-color: #ffa500;
+  border: 4px solid white;
+  text-decoration: none;
+  font-size: 1.8em;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #ffa500;
+  border:  1px solid;
+}
+
+#membership-plans {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#membership-plans>section {
+  width: 75%;
+  background-color: inherit;
+  z-index: 2;
+  height: inherit;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.ads {
+  width: 25%;
+  background-color: lightgray;
+  z-index: 2;
+  height: 100%;
+  margin: 150px 0;
+  text-align: center;
+  color: red;
+  padding: 50px 0 0 0;
+  border: 1px yellow solid;
+}
+
+.ads p {
+  text-align: left;
+  color: black;
+  padding: 0 10%;
+}
+
+#type .container {
+  width: 40%;
+  padding: 10px 10px 30px 10px;
+  margin: 0 0 50px 50px;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+#type ul{
+  text-align: left;
+}
+
+.container ol {
+  text-align: left;
+}
+
+.container {
+  width: 250px;
+  padding: 10px 10px 30px 10px;
+  margin: 0 0 50px 50px;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.container a {
+  text-decoration: none;
+  color: #ffa500;
+  font-size: 1.5em;
+  padding: 7px 12px;
+  background-color: white;
+  border: 2px solid #ffa500;
+}
+
+.container button {
+}
+
+.container img {
+  width: 100%;
+}
+
+.container h3 {
+  color: #ffa500;
+  text-transform: uppercase;
+  border-bottom: #ffa500 2px solid;
+}
+
+.container p {
+  text-align: left;
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  background-color: #ffa500;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#student-timetable {
+  clear: both;
+  width: 100%;
+  padding: 70px 0;
+}
+
+dd {
+  margin-left: 0;
+}
+
+footer {
+  font-size: small;
+}
+
+
+/* tester */
+
+@media screen and (max-width: 900px) {
+  nav a {
+    display: block;
+    width: 100%;
+  }
+
+  nav {
+    position: static;
+    height: 295px;
+  }
+
+  .brief article {
+    padding: 0 10px;
+  }
+
+  .brief article a {
+    font-size: 1em;
+  }
+
+  .breadcrumbs {
+    padding: 10px 0;
+  }
+
+  .wrapper {
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .half-height {
+    height: 60vh;
+  }
+
+  input[type="reset"], input[type="submit"] {
+    width: 100%;
+  }
+
+  #membership-plans {
+    display: block;
+  }
+
+  #membership-plans section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container {
+    margin: 30px;
+  }
+
+  #type .container {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .ads {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  #student-details {
+    text-align: center;
+  }
+
+  #student-timetable {
+    clear: both;
+  }
+
+  #student-timetable table {
+    width: 100%;
+  }
+
+  #student-photo {
+    float: none;
+  }
+
+  dd {
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper-middle {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .half-height {
+    height: 50vh;
+  }
+
+  .btn {
+    font-size: 1.2em;
+  }
+
+  fieldset {
+    width: 280px;
+  }
+
+  fieldset fieldset {
+    width: 200px;
+  }
+
+  textarea {
+    width: 200px;
+  }
+
+  #promo-table {
+    font-size: 1em;
+  }
+
+  .brief {
+    display: block;
+    text-align: center;
+    margin: 50px 0;
+    border: none;
+    padding: 0;
+  }
+
+  .brief section, .brief article {
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .brief p {
+    text-align: left;
+  }
+
+  .brief img {
+    width: 150px;
+  }
+
+  .slogan {
+    font-size: 40px;
+  }
+
+  #type .container {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+}

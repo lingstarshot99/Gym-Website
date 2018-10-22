@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Assignment Part 2" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="author" content="Khhairunnasulfahmi Khairul Zaki" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/style.css" type="text/css" />
+  <title>Enhancement - Steel Arm</title>
+</head>
+
+<body>
+  <nav>
+    <a id="logo" href="index.html">STEEL ARM</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="product.html">Membership</a>
+    <a href="enquire.html">Enquiry</a>
+    <a href="enhancements2.html">Enhancement</a>
+  </nav>
+  <header>
+    <section class="breadcrumbs">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li> > </li>
+        <li>Enhancement</li>
+      </ul>
+    </section>
+  </header>
+  <section class="back-orange half-height">
+    <section class="wrapper-middle">
+      <h1 class="slogan">Enhancements Applied</h1>
+      <a class="btn" href="#enhance-section">See More</a>
+    </section>
+  </section>
+  <section class="wrapper" id="enhance-section">
+    <h1 class="sub-title">Enhancements</h1>
+    <h2>Set Time Out</h2>
+    <p>
+      On payment page, to increase the security of payment online, a timer is
+      set to make sure the user finish entering the credit card details in time
+      or the page will redirect to the home page. To improve the user experience,
+      the there will be a warning that will inform the user of how much time is left.
+      Plus, from session storage, the name on credit card will be filled automatically
+      but the user is allowed to change the input.
+    </p>
+    <p>Applied page links</p>
+    <ol>
+      <li><a href="enquire.html">Payment (Must go through enquire.html)</a></li>
+      <li><a href="scripts/enhancements.js">Source Code</a></li>
+    </ol>
+    <h2>Slide Show (Change CSS attributes)</h2>
+    <p>
+      On home page, using setInterval function of javascript to change the banner
+      every specified time. This is used by using DOM to change the css style background.
+      There is a use of loops and selection to make sure that the javascript will not broke.
+      It is set that every x second, the DOM will access the section with an id of 'banner'
+      and change the background and set it to a new link where the background picture is located.
+      These background picture location is stored in an array where the index increment is used to
+      access each of the background.
+    </p>
+    <p>Applied page links</p>
+    <ol>
+      <li><a href="index.html#welcome">Home</a></li>
+      <li><a href="scripts/enhancements.js">Source Code</a></li>
+    </ol>
+    <h2>Dynamic Content (Javascript event)</h2>
+    <p>
+      On home.html, previously all the section is shown to the user. However, it is
+      changed to include javascript onclick property. It will show one section at
+      a time. The user will have a button to click and the content will change.
+      This will increase the UX so that it user can focus on one section at a time.
+      Everytime the button is clicked, (onclick event) a function of changing the property of
+      display for each section to be none. Only one section will have the display property of
+      flex at one time. This will change everytime and will go through each section.
+      Each section will have a turn to be displayed.
+    </p>
+    <p>Applied page links</p>
+    <ol>
+      <li><a href="index.html#index">Home</a></li>
+      <li><a href="scripts/enhancements.js">Source Code</a></li>
+    </ol>
+  </section>
+  <footer>
+    <h1>Steel Arm Gym</h1>
+    <h4>Kharunnasul</h4>
+    <h4>04-01043474</h4>
+    <a href="mailto:102015077@student.swin.edu.au">102015077@student.swin.edu.au</a>
+  </footer>
+</body>
+
+</html>

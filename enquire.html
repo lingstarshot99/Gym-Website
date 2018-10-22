@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Assignment Part 2" />
+  <meta name="keywords" content="HTML, CSS, javaScript" />
+  <meta name="author" content="Khairunnasulfahmi Khairul Zaki" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/style.css" type="text/css" />
+  <script type="text/javascript" src="scripts/part2.js"></script>
+  <title>Enquiry Form</title>
+</head>
+
+<body id="enquiry-page">
+  <nav>
+    <a id="logo" href="index.html">STEEL ARM</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="product.html">Membership</a>
+    <a href="enquire.html">Enquiry</a>
+    <a href="enhancements2.html">Enhancement</a>
+  </nav>
+  <header>
+    <section class="breadcrumbs">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li> > </li>
+        <li>Enquiry</li>
+      </ul>
+    </section>
+  </header>
+  <section class="back-orange half-height">
+    <section class="wrapper-middle">
+      <h1 class="slogan">We're Here to Assist You</h1>
+      <a class="btn" href="#enquiry-section">I Need Help</a>
+    </section>
+  </section>
+  <section id="enquiry-section" class="wrapper">
+    <h1>Submit an Enquiry Form</h1>
+    <form id="enquiry" action="payment.html" method="post">
+      <fieldset>
+        <legend>Customer Details</legend>
+        <p>
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" required="required" pattern="[A-Za-z]{1,25}" maxlength="25" size="25" />
+        </p>
+        <p>
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName" required="" pattern="[A-Za-z]{1,25}" maxlength="25" size="25" />
+        </p>
+        <p>
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" required="required" size="30" />
+        </p>
+        <fieldset>
+          <legend>Address Details</legend>
+          <p>
+            <label for="street">Street Address</label>
+            <input type="text" name="street" id="street" required="required" maxlength="40" size="20" />
+          </p>
+          <p>
+            <label for="suburb">Suburb/Town</label>
+            <input type="text" name="suburb" id="suburb" required="required" size="20" maxlength="20" />
+          </p>
+          <p>
+            <label for="state">State</label>
+            <select id="state" name="state" required="required">
+              <option value="">Please Select</option>
+              <option value="VIC">VIC</option>
+              <option value="NSW">NSW</option>
+              <option value="QLD">QLD</option>
+              <option value="NT">NT</option>
+              <option value="WA">WA</option>
+              <option value="SA">SA</option>
+              <option value="TAS">TAS</option>
+              <option value="ACT">ACT</option>
+            </select>
+          </p>
+          <p>
+            <label for="postcode">Postcode</label>
+            <input type="text" name="postcode" id="postcode" required="required" pattern="[0-9]{4}" maxlength="4" size="4" />
+          </p>
+        </fieldset>
+        <p>
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" id="phone" required="required" pattern="[0-9]{10}" placeholder="0401043474" maxlength="10" size="10" />
+        </p>
+          <p>Preferred Contact :</p>
+        <p>
+          <label for="online">Email</label>
+          <input type="radio" name="preferredContact" value="Email" id="online" required="required" />
+          <label for="post">Post</label>
+          <input type="radio" name="preferredContact" value="Post" id="post" />
+          <label for="call">Phone</label>
+          <input type="radio" name="preferredContact" value="Call" id="call" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Product Enquiry</legend>
+        <p>
+          <label for="product">Product</label>
+          <select id="product" name="product" required="required">
+            <option value="">Please Select</option>
+            <option value="Platinum">Platinum Membership</option>
+            <option value="Gold">Gold Membership</option>
+            <option value="Flex">Flex Membership</option>
+            <option value="Others">Others</option>
+          </select>
+        </p>
+        <p>
+          <label for="duration">Number of Subscription Days</label>
+          <input type="number" name="duration" id="duration" required="required" placeholder="2 months = 60 days" />
+        </p>
+        <p>
+          <label for="member-type">Membership Type</label>
+          <select name="member-type" id="member-type" required="required" >
+            <option value="">Please select</option>
+            <option value="Contract">Contract</option>
+            <option value="Pre-paid">Pre-paid</option>
+          </select>
+        </p>
+        <h5>*Contract will have no register fee and a day charge of $10</h5>
+        <h5>*Pre-paid will have a $150 register fee and a day charge of $5</h5>
+        <p>Product Features :</p>
+        <p>
+          <label for="content">Content</label>
+          <input type="checkbox" name="feature[]" value="Content" id="content" checked="checked"/>
+          <label for="price">Price</label>
+          <input type="checkbox" name="feature[]" value="Price" id="price" />
+          <label for="other">Other</label>
+          <input type="checkbox" name="feature[]" value="Other" id="other" />
+        </p>
+        <p>
+          <label for="comment">Comment/Description</label>
+        </p>
+        <textarea name="comment" rows="8" cols="40" id="comment"></textarea>
+      </fieldset>
+      <section class="wrapper-middle">
+        <input type="submit" value="Pay Now" />
+        <input type="reset" value="Reset Form" />
+      </section>
+    </form>
+  </section>
+  <footer>
+    <h1>Steel Arm Gym</h1>
+    <h4>Kharunnasul</h4>
+    <h4>04-01043474</h4>
+    <a href="mailto:102015077@student.swin.edu.au">102015077@student.swin.edu.au</a>
+  </footer>
+
+</body>
+
+</html>

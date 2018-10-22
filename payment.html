@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Assignment Part 2" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="author" content="Khhairunnasulfahmi Khairul Zaki" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/style.css" type="text/css" />
+  <script type="text/javascript" src="scripts/part2.js"></script>
+  <title>Payments - Steel Arm</title>
+</head>
+
+<body id="payment-page">
+  <nav>
+    <a id="logo" href="index.html">STEEL ARM</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="product.html">Membership</a>
+    <a href="enquire.html">Enquiry</a>
+    <a href="enhancements2.html">Enhancement</a>
+  </nav>
+  <header>
+    <section class="breadcrumbs">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li> > </li>
+        <li>Payment</li>
+      </ul>
+    </section>
+  </header>
+  <section class="wrapper">
+    <form id="credit-form" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+      <fieldset>
+        <legend>Your Details</legend>
+        <p>Name: <span id="confirm_name"></span></p>
+        <p>Email Address: <span id="confirm_email"></span></p>
+        <p>Address: <span id="confirm_address"></span></p>
+        <p>Phone Number: <span id="confirm_phone"></span></p>
+        <p>Preferred Contact: <span id="confirm_contact"></span></p>
+        <p>Product: <span id="confirm_product"></span></p>
+        <p>Number of Subscription Days: <span id="confirm_ndays"></span></p>
+        <p>Membership Type: <span id="confirm_type"></span></p>
+        <p>Product Features: <span id="confirm_features"></span></p>
+        <p>Comment: <span id="confirm_comment"></span></p>
+        <p>Price: <span id="confirm_price"></span></p>
+        <input type="hidden" name="firstName" id="firstName" />
+        <input type="hidden" name="lastName" id="lastName" />
+        <input type="hidden" name="street" id="street" />
+        <input type="hidden" name="suburb" id="suburb" />
+        <input type="hidden" name="postcode" id="postcode" />
+        <input type="hidden" name="state" id="state" />
+        <input type="hidden" name="email" id="email" />
+        <input type="hidden" name="phone" id="phone" />
+        <input type="hidden" name="product" id="product" />
+        <input type="hidden" name="type" id="type" />
+        <input type="hidden" name="features" id="features" />
+        <input type="hidden" name="comment" id="comment" />
+        <input type="hidden" name="preferredContact" id="preferredContact" />
+        <input type="hidden" name="numberOfDays" id="ndays" />
+        <input type="hidden" name="price" id="price" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Credit Card Payment</legend>
+        <p>
+          <label for="credit-type">Credit Card Type</label>
+          <select name="credit-type" required="required" id="credit-type">
+            <option value="">Please Select</option>
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="American Express">American Express</option>
+          </select>
+        </p>
+        <p>
+          <label for="credit-name">Name on Credit Card</label>
+          <input type="text" name="credit-name" id="credit-name" />
+        </p>
+        <p>
+          <label for="credit-number">Credit Card Number</label>
+          <input type="text" name="credit-number" id="credit-number" />
+        </p>
+        <p>
+          <label for="credit-expiry">Credit Card Expiry Date</label>
+          <input type="text" name="credit-expiry" id="credit-expiry" />
+        </p>
+        <p>
+          <label for="credit-verification">Card Verification Value</label>
+          <input type="text" name="credit-verification" id="credit-verification" />
+        </p>
+      </fieldset>
+      <section class="wrapper-middle">
+        <input type="submit" value="Check Out" />
+        <input type="reset" value="Cancel Order" />
+      </section>
+  </form>
+</section>
+<script type="text/javascript" src="scripts/enhancements.js"></script>
+</body>
+
+</html>
